@@ -1,4 +1,4 @@
-# Form-Data [![NPM Module](https://img.shields.io/npm/v/form-data.svg)](https://www.npmjs.com/package/form-data) [![Join the chat at https://gitter.im/form-data/form-data](http://form-data.github.io/images/gitterbadge.svg)](https://gitter.im/form-data/form-data)
+
 
 A library to create readable ```"multipart/form-data"``` streams. Can be used to submit forms and file uploads to other web applications.
 
@@ -6,17 +6,10 @@ The API of this library is inspired by the [XMLHttpRequest-2 FormData Interface]
 
 [xhr2-fd]: http://dev.w3.org/2006/webapi/XMLHttpRequest-2/Overview.html#the-formdata-interface
 
-[![Linux Build](https://img.shields.io/travis/form-data/form-data/master.svg?label=linux:6.x-12.x)](https://travis-ci.org/form-data/form-data)
-[![MacOS Build](https://img.shields.io/travis/form-data/form-data/master.svg?label=macos:6.x-12.x)](https://travis-ci.org/form-data/form-data)
-[![Windows Build](https://img.shields.io/travis/form-data/form-data/master.svg?label=windows:6.x-12.x)](https://travis-ci.org/form-data/form-data)
-
-[![Coverage Status](https://img.shields.io/coveralls/form-data/form-data/master.svg?label=code+coverage)](https://coveralls.io/github/form-data/form-data?branch=master)
-[![Dependency Status](https://img.shields.io/david/form-data/form-data.svg)](https://david-dm.org/form-data/form-data)
-
 ## Install
 
 ```
-npm install --save form-data
+npm install --save npm i enchanted-form-data
 ```
 
 ## Usage
@@ -25,7 +18,7 @@ In this example we are constructing a form with 3 fields that contain a string,
 a buffer and a file stream.
 
 ``` javascript
-var FormData = require('form-data');
+var FormData = require('enchanted-form-data');
 var fs = require('fs');
 
 var form = new FormData();
@@ -37,7 +30,7 @@ form.append('my_file', fs.createReadStream('/foo/bar.jpg'));
 Also you can use http-response stream:
 
 ``` javascript
-var FormData = require('form-data');
+var FormData = require('enchanted-form-data');
 var http = require('http');
 
 var form = new FormData();
@@ -52,7 +45,7 @@ http.request('http://nodejs.org/images/logo.png', function(response) {
 Or @mikeal's [request](https://github.com/request/request) stream:
 
 ``` javascript
-var FormData = require('form-data');
+var FormData = require('enchanted-form-data');
 var request = require('request');
 
 var form = new FormData();
@@ -79,7 +72,7 @@ For more advanced request manipulations ```submit()``` method returns ```http.Cl
 You can provide custom options, such as `maxDataSize`:
 
 ``` javascript
-var FormData = require('form-data');
+var FormData = require('enchanted-form-data');
 
 var form = new FormData({ maxDataSize: 20971520 });
 form.append('my_field', 'my value');
@@ -186,16 +179,16 @@ form.submit({
 
 ### Methods
 
-- [_Void_ append( **String** _field_, **Mixed** _value_ [, **Mixed** _options_] )](https://github.com/form-data/form-data#void-append-string-field-mixed-value--mixed-options-).
-- [_Headers_ getHeaders( [**Headers** _userHeaders_] )](https://github.com/form-data/form-data#array-getheaders-array-userheaders-)
-- [_String_ getBoundary()](https://github.com/form-data/form-data#string-getboundary)
-- [_Void_ setBoundary()](https://github.com/form-data/form-data#void-setboundary)
-- [_Buffer_ getBuffer()](https://github.com/form-data/form-data#buffer-getbuffer)
-- [_Integer_ getLengthSync()](https://github.com/form-data/form-data#integer-getlengthsync)
-- [_Integer_ getLength( **function** _callback_ )](https://github.com/form-data/form-data#integer-getlength-function-callback-)
-- [_Boolean_ hasKnownLength()](https://github.com/form-data/form-data#boolean-hasknownlength)
-- [_Request_ submit( _params_, **function** _callback_ )](https://github.com/form-data/form-data#request-submit-params-function-callback-)
-- [_String_ toString()](https://github.com/form-data/form-data#string-tostring)
+- [_Void_ append( **String** _field_, **Mixed** _value_ [, **Mixed** _options_] )](https://github.com/Ukkime/form-data#void-append-string-field-mixed-value--mixed-options-).
+- [_Headers_ getHeaders( [**Headers** _userHeaders_] )](https://github.com/Ukkime/form-data#array-getheaders-array-userheaders-)
+- [_String_ getBoundary()](https://github.com/Ukkime/form-data#string-getboundary)
+- [_Void_ setBoundary()](https://github.com/Ukkime/form-data#void-setboundary)
+- [_Buffer_ getBuffer()](https://github.com/Ukkime/form-data#buffer-getbuffer)
+- [_Integer_ getLengthSync()](https://github.com/Ukkime/form-data#integer-getlengthsync)
+- [_Integer_ getLength( **function** _callback_ )](https://github.com/Ukkime/form-data#integer-getlength-function-callback-)
+- [_Boolean_ hasKnownLength()](https://github.com/Ukkime/form-data#boolean-hasknownlength)
+- [_Request_ submit( _params_, **function** _callback_ )](https://github.com/Ukkime/form-data#request-submit-params-function-callback-)
+- [_String_ toString()](https://github.com/Ukkime/form-data#string-tostring)
 
 #### _Void_ append( **String** _field_, **Mixed** _value_ [, **Mixed** _options_] )
 Append data to the form. You can submit about any format (string, integer, boolean, buffer, etc.). However, Arrays are not supported and need to be turned into strings by the user.
