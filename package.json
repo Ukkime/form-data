@@ -1,11 +1,11 @@
 {
-  "author": "Felix Geisendörfer <felix@debuggable.com> (http://debuggable.com/)",
+  "author": "Alex Latorre forked from Felix Geisendörfer <felix@debuggable.com> (http://debuggable.com/)",
   "name": "form-data",
   "description": "A library to create readable \"multipart/form-data\" streams. Can be used to submit forms and file uploads to other web applications.",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "repository": {
     "type": "git",
-    "url": "git://github.com/form-data/form-data.git"
+    "url": "https://github.com/Ukkime/form-data"
   },
   "main": "./lib/form_data",
   "browser": "./lib/browser",
@@ -64,5 +64,17 @@
     "tape": "^4.6.2",
     "typescript": "^3.5.2"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "keywords": [
+    "form-data",
+    "multipart/form-data"
+  ],
+  "bugs": {
+    "url": "https://github.com/Ukkime/form-data/issues"
+  },
+  "homepage": "https://github.com/Ukkime/form-data/form-data#readme"
 }
