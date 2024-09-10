@@ -1,6 +1,6 @@
 {
   "author": "Alex Latorre forked from Felix Geisendörfer <felix@debuggable.com> (http://debuggable.com/)",
-  "name": "form-data",
+  "name": "enchanted-form-data",
   "description": "A library to create readable \"multipart/form-data\" streams. Can be used to submit forms and file uploads to other web applications.",
   "version": "4.0.1",
   "repository": {
